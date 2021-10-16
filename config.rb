@@ -55,19 +55,4 @@ end
 configure :build do
   # Minify CSS on build
   # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-  # リポジトリ名を host に設定しておく
-  # こうすることで stylesheet_link_tag などで展開されるパスが
-  # https://(ユーザー名).github.io/(リポジトリ名)/stylesheets/*.css
-  # のようになる
-  activate :asset_hash
-  activate :asset_host, :host => 'https://gearmachine.github.io/atchi.jp'
-end
-
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.deploy_method = :git
-  deploy.branch = 'gh-pages'
 end
