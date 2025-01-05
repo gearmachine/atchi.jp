@@ -2,7 +2,16 @@
 <html lang="jp">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6LLYHXBT0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-F6LLYHXBT0');
+    </script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +27,13 @@
     <link href="css/agency.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- WARNING: Respond.js does not work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -45,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">合同会社あっち</a>
+                <a class="navbar-brand page-scroll" href="#page-top">あっち</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,13 +64,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">業務内容</a>
+                        <a class="page-scroll" href="#about">「あっち」とは</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">会社概要</a>
+                        <a class="page-scroll" href="#projects">プロジェクト</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">プロフィール</a>
+                        <a class="page-scroll" href="#services">事業内容</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#profile">代表プロフィール</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#recruiting">キャラ開発者募集</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">連絡先</a>
@@ -76,107 +91,115 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">世の中の創造性を底上げする</div>
-                <div class="intro-heading">あっち</div>
-                <a href="#services" class="page-scroll btn btn-xl">詳細</a>
+            <div class="intro-text text-center">
+                <div class="intro-lead-in">人々を前に進ませる物語とそのための仕組みを創る</div>
+                <div class="intro-heading">キャラクター開発のあっち</div>
+                <a href="#about" class="page-scroll btn btn-xl">詳しく見る</a>
             </div>
         </div>
     </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">「あっち」とは</h2>
+                    <h3 class="section-subheading text-muted">2025年、技術支援を主業としていた合同会社「あっち」は、キャラクター開発会社の新会社〇〇(未定)へ名称変更予定。新会社の概要、ビジョン・ミッション、どういうキャラクターコンテンツを作っていくかについて</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <div class="iframe-wrapper">
+                        <iframe lass="presentation" src="https://docs.google.com/presentation/d/e/2PACX-1vTnnjokoU8uh7bRL2ghxSJ_I9GYRm31NVcUy6Zgvqn7tryMYemU82TweYzW1Zgakg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">オープンキャラクタープロジェクト</h2>
+                    <h3 class="section-subheading text-muted">オープンキャラクターとは、ライセンスが柔軟に設定され、商用利用や二次創作が一定の条件下で自由に行えるキャラクターモデル。<br>キャラクターの価値と持続可能性を最大化することを目的としています。</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <h4>従来のキャラクタービジネスとの比較</h4>
+                    <img src="img/open-char1.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <h4>オープンキャラクターのエコシステム</h4>
+                    <img src="img/open-char2.png" class="img-responsive" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">業務内容</h2>
-                    <h3 class="section-subheading text-muted">創造性を駆使し常識外の「あっち」を常識の「こっち」にします</h3>
+                    <h2 class="section-heading">事業内容</h2>
+                    <h3 class="section-subheading text-muted">キャラクターを主軸とした事業展開について</h3>
                 </div>
             </div>
             <div class="row text-center">
+                <div class="col-md-4"></div>
                 <div class="col-md-4">
+                    <span class="fa-stack fa-6x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-dove fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">キャラクターシステム開発</h4>
+                    <p class="text-muted">オリジナルのキャラクターを開発し、そのためのシステムを並行して開発していきます</p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-gift fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">新商品コンサルディング</h4>
-                    <p class="text-muted">新商品の企画から試作・制作をサポートします。主に電子機器やコンテンツに対しての強みがあります。</p>
+                    <h4 class="service-heading">キャラクター商品開発</h4>
+                    <p class="text-muted">キャラクターを活かした生活雑貨や玩具を開発し、ファンの生活の質を向上させるべく販売網を通して届けます</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-photo-film fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">ハード・ソフトエンジニアリング</h4>
-                    <p class="text-muted">プロトタイピング、開発、量産、サービス立ち上げまで、製品開発の上流から下流まで一貫して業務を請け負います。小ロットから大量生産までの実績を活かします。</p>
+                    <h4 class="service-heading">キャラクターコンテンツ販売</h4>
+                    <p class="text-muted">キャラクターコンテンツをメディアを通して提供します。主にインターネット上の電子メディアにて展開していきます</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">創造性を高めるコンテンツ制作</h4>
-                    <p class="text-muted">付け焼き刃ではない基礎訓練により創造性を高める方法を広めます。それによって制作されたコンテンツも広め創造性を高め続けるエコシステムを創っています。</p>
+                    <h4 class="service-heading">キャラクターライセンス事業</h4>
+                    <p class="text-muted">キャラクターの魅力をパートナー企業にも許諾することで、より幅広くファンへアプローチしていきます</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-hand-holding-hand fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">キャラクターコミュニティ運営</h4>
+                    <p class="text-muted">キャラクターのクリエイターとファン同士の距離を近づけ、一緒になってキャラクターを育てていきます</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- About Section -->
-    <section id="about" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">会社概要</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <table class="table">
-                        <tr>
-                            <td>会社名</td><td>合同会社あっち</td>
-                        </tr>
-                        <tr>
-                            <td>本店所在地</td><td>京都府京都市</td>
-                        </tr>
-                        <tr>
-                            <td>会社創立日</td><td>2016年4月1日</td>
-                        </tr>
-                        <tr><td>代表</td><td>杉山 慎</td></tr>
-                        <tr>
-                            <td>資本金</td><td>3,000,000 円</td>
-                        </tr>
-                        <tr>
-                            <td>主な目的</td>
-                            <td>
-                                <ul>
-                                    <li>   
-                                        インターネットを利用した各種情報提供サービスの提供
-                                    </li>
-                                    <li>
-                                        インターネットを利用した通信販売業務
-                                    </li>
-                                    <li>
-                                        新商品の企画、開発の受託、生産過程に関するコンサルティング
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team">
+    <!-- Profile Section -->
+    <section id="profile" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -190,18 +213,47 @@
                     <div class="team-member">
                         <img src="img/team/shinsgym.jpg" class="img-responsive img-circle" alt="">
                         <h4>杉山 慎</h4>
-                        <p class="text-muted">代表</p>
-                        <p class="text-muted">1977年生まれ。2002年に大学院卒業後、ハード技術者として任天堂に入社。世界累計出荷台数1億台のゲーム機「Wii」のリモコンの開発などに従事。後継機「WiiU」では、大量生産を実現する工程検査ソフトの土台作りや、修理サポートの支援業務を遂行。</p>
-                        <p class="text-muted">2016年任天堂を退職と同時に「合同会社あっち」を設立。</p>
+                        <p class="text-muted">代表／エンジニア／キャラクタープロデューサー</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            <li><a href="https://x.com/shin_sgym"><i class="fa fa-brands fa-square-x-twitter"></i></a>
                             </li>
-                            <li><a href="https://facebook.com/shin.sgym"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://facebook.com/shin.sgym"><i class="fa fa-brands fa-square-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <p class="text-muted">1977年生まれ。2002年に大学院卒業後、ハード技術者として任天堂に入社。「Wii」のリモコンの開発、「Switch」の本体の開発などを担当。</p>
+                        <p class="text-muted">2016年任天堂を退職と同時に独立。以降フリーランスとして新規開発支援に従事。</p>
+                        <p class="text-muted">Atmophにて開発したデジタル窓「Atmoph Window2」はクラウドファンディングで5000万円以上の支援を獲得。中西金属工業にて試作した家庭用冷凍ゴミ箱「Clean Box」でグッドデザイン賞の「2019 ベスト100」を受賞。</p>
+                        <p class="text-muted">2025年、次世代も楽しませるキャラクターコンテンツを作る新会社を創業予定。</p>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruiting Section -->
+    <section id="recruiting">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">キャラクター開発者募集</h2>
+                    <h3 class="section-subheading text-muted">新しいコンテンツの試作を手伝ってくれるキャラクター開発者(プランナー・デザイナー)を募集しています</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQAV3WFGBVPqsSIw_FYWDars5OJl5ZoqPpUYjSOlsXmSx_wxWKJRoUy9Ehj9LHFtw/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -211,8 +263,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">ご連絡</h2>
-                    <h3 class="section-subheading text-muted">仕事のご依頼、その他ご連絡は以下のメールフォームからどうぞ</h3>
+                    <h2 class="section-heading">連絡先</h2>
+                    <h3 class="section-subheading text-muted">参画のご連絡、お問い合わせは代表のSNS、または以下フォームからお願いします</h3>
                 </div>
             </div>
             <div class="row">
@@ -251,15 +303,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Atchi. lcc. 2021</span>
+                    <span class="copyright">Copyright &copy; 合同会社あっち 2024</span>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
+                    <!-- <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">

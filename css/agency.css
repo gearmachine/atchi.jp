@@ -101,7 +101,7 @@ fieldset[disabled] .btn-primary.active {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 3px;
+  border-radius: 40px;
   font-size: 18px;
   padding: 20px 40px;
 }
@@ -216,10 +216,12 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: none;
+  background-image: url('../img/header-bg.gif');
+  background-color: rgba(132, 142, 141, 0.7);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center bottom;
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
@@ -234,7 +236,7 @@ header .intro-text .intro-lead-in {
   font-style: italic;
   font-size: 22px;
   line-height: 22px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -242,7 +244,12 @@ header .intro-text .intro-heading {
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
+}
+@media (max-width: 400px) {
+  header {
+    background-position: right center;
+  }
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -255,6 +262,7 @@ header .intro-text .intro-heading {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 25px;
+    width: 580px;
   }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -266,7 +274,7 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -279,12 +287,39 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
+}
+section .iframe-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+section .iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 75px 0;
   }
+}
+#projects {
+  text-align: center;
+}
+#projects h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+#projects p {
+  margin-top: 0;
+}
+#projects img {
+  border-radius: 10px;
 }
 .service-heading {
   margin: 15px 0;
